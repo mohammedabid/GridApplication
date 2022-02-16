@@ -38,10 +38,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
     private fun refreshClickState(id: Int) {
-        if (selectionQueue.size == 2) {
-            selectionQueue.poll()
+        if(!selectionQueue.contains(id)) {
+            if (selectionQueue.size == 2) {
+                selectionQueue.poll()
+            }
+            selectionQueue.add(id)
         }
-        selectionQueue.add(id)
     }
 
     override fun onClick(v: View?) {
