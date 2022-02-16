@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/row_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ib_1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:tag="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ib_2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ib_2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:tag="2"
+        app:layout_constraintStart_toEndOf="@id/ib_1"
+        app:layout_constraintEnd_toStartOf="@id/ib_3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ib_3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:tag="3"
+        app:layout_constraintStart_toEndOf="@id/ib_2"
+        app:layout_constraintEnd_toStartOf="@id/ib_4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ib_4"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:tag="4"
+        app:layout_constraintStart_toEndOf="@id/ib_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_2"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/row_1"
+        app:layout_constraintBottom_toTopOf="@id/row_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_5"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ib_6"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_6"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="6"
+            app:layout_constraintStart_toEndOf="@id/ib_5"
+            app:layout_constraintEnd_toStartOf="@id/ib_7"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_7"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="7"
+            app:layout_constraintStart_toEndOf="@id/ib_6"
+            app:layout_constraintEnd_toStartOf="@id/ib_8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_8"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="8"
+            app:layout_constraintStart_toEndOf="@id/ib_7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_3"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/row_2"
+        app:layout_constraintBottom_toTopOf="@id/row_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_9"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ib_10"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_10"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="10"
+            app:layout_constraintStart_toEndOf="@id/ib_9"
+            app:layout_constraintEnd_toStartOf="@id/ib_11"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_11"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="11"
+            app:layout_constraintStart_toEndOf="@id/ib_10"
+            app:layout_constraintEnd_toStartOf="@id/ib_12"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_12"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="12"
+            app:layout_constraintStart_toEndOf="@id/ib_11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/row_4"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/row_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_13"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/ib_14"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_14"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="14"
+            app:layout_constraintStart_toEndOf="@id/ib_13"
+            app:layout_constraintEnd_toStartOf="@id/ib_15"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_15"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="15"
+            app:layout_constraintStart_toEndOf="@id/ib_14"
+            app:layout_constraintEnd_toStartOf="@id/ib_16"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ib_16"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:tag="16"
+            app:layout_constraintStart_toEndOf="@id/ib_15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
